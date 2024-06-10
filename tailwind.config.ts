@@ -12,11 +12,74 @@ export default {
 		join(require.resolve('@skeletonlabs/skeleton'), '../**/*.{html,js,svelte,ts}')
 	],
 	theme: {
-		extend: {}
+		extend: {
+			typography: (theme) => ({
+				DEFAULT: {
+					css: {
+						color: `rgb(var(--theme-font-color-base))`,
+						a: {
+							color: `rgb(var(--color-primary-500))`,
+							'&:hover': {
+								color: `rgb(var(--color-primary-400))`
+							}
+						},
+						h1: {
+							color: `rgb(var(--theme-font-color-base))`
+						},
+						h2: {
+							color: `rgb(var(--theme-font-color-base))`
+						},
+						h3: {
+							color: `rgb(var(--theme-font-color-base))`
+						},
+						h4: {
+							color: `rgb(var(--theme-font-color-base))`
+						},
+						blockquote: {
+							color: `rgb(var(--theme-font-color-base))`,
+							borderLeftColor: `rgb(var(--color-primary-500))`
+						},
+						strong: {
+							color: `rgb(var(--theme-font-color-base))`
+						}
+					}
+				},
+				dark: {
+					css: {
+						color: `rgb(var(--theme-font-color-dark))`,
+						a: {
+							color: `rgb(var(--color-primary-500))`,
+							'&:hover': {
+								color: `rgb(var(--color-primary-400))`
+							}
+						},
+						h1: {
+							color: `rgb(var(--theme-font-color-dark))`
+						},
+						h2: {
+							color: `rgb(var(--theme-font-color-dark))`
+						},
+						h3: {
+							color: `rgb(var(--theme-font-color-dark))`
+						},
+						h4: {
+							color: `rgb(var(--theme-font-color-dark))`
+						},
+						blockquote: {
+							color: `rgb(var(--theme-font-color-dark))`,
+							borderLeftColor: `rgb(var(--color-primary-500))`
+						},
+						strong: {
+							color: `rgb(var(--theme-font-color-dark))`
+						}
+					}
+				}
+			})
+		}
 	},
 	plugins: [
 		forms,
-		require('@tailwindcss/typography'),
+		typography,
 		skeleton({
 			themes: {
 				preset: [

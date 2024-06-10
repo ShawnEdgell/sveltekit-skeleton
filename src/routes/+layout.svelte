@@ -41,7 +41,7 @@
 	<div class="sticky top-0 z-10 w-full">
 		<AppBar />
 	</div>
-	<main class="max-w-4xl flex-grow w-full flex justify-center p-4">
+	<main class="max-w-4xl flex-grow w-full flex justify-center p-6">
 		{#if currentRoute === '/'}
 			<div class="flex-grow flex items-center justify-center w-full">
 				<slot />

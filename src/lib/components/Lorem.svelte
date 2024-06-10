@@ -1,4 +1,4 @@
-<article class="prose lg:prose-xl my-12">
+<article class="prose dark:prose-dark lg:prose-xl my-6">
 	<h1 class="h1 font-bold">Header Example</h1>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae gravida tellus. Duis tempus
