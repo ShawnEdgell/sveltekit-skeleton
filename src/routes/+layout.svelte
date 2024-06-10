@@ -29,8 +29,6 @@
 	import AppBar from '$lib/components/AppBar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import Navigation from '$lib/components/Navigation.svelte';
-
-	$: currentRoute = $page.url.pathname;
 </script>
 
 <Drawer>
@@ -41,14 +39,8 @@
 	<div class="sticky top-0 z-10 w-full">
 		<AppBar />
 	</div>
-	<main class="max-w-4xl flex-grow w-full flex justify-center p-6">
-		{#if currentRoute === '/'}
-			<div class="flex-grow flex items-center justify-center w-full">
-				<slot />
-			</div>
-		{:else}
-			<slot />
-		{/if}
-	</main>
+	<div class="flex-grow flex items-center justify-center w-full p-6">
+		<slot />
+	</div>
 </div>
 <Footer />
