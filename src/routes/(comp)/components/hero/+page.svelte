@@ -2,9 +2,10 @@
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 </script>
 
-<CodeBlock
-	language="html"
-	code={`<section class="flex items-center justify-center w-full text-center p-6">
+<div class="my-6 p-6 space-y-5">
+	<CodeBlock
+		language="html"
+		code={`<section class="flex items-center justify-center w-full text-center p-6">
 	<div>
 		<h1 class="text-5xl font-bold mb-4">Welcome to Your Website</h1>
 		<p class="text-xl mb-6">This is your hero section, use it to grab attention!</p>
@@ -15,4 +16,5 @@
 </section>
 
 `}
-></CodeBlock>
+	></CodeBlock>
+</div>

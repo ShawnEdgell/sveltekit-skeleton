@@ -2,9 +2,10 @@
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 </script>
 
-<CodeBlock
-	language="ts"
-	code={`
+<div class="my-6 p-6 space-y-5">
+	<CodeBlock
+		language="ts"
+		code={`
 	import { AppBar, LightSwitch, getDrawerStore } from '@skeletonlabs/skeleton';
 	import type { DrawerSettings } from '@skeletonlabs/skeleton';
 
@@ -18,10 +19,10 @@
 	function openDrawer() {
 		drawerStore.open(drawerSettings);
 	}`}
-></CodeBlock>
-<CodeBlock
-	language="html"
-	code={`<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
+	></CodeBlock>
+	<CodeBlock
+		language="html"
+		code={`<AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
 	<svelte:fragment slot="lead">
 		<a href="/" class="h4 hidden sm:block font-bold">Website</a>
 		<button type="button" on:click={openDrawer} aria-label="Open Menu">
@@ -54,4 +55,5 @@
 	</svelte:fragment>
 </AppBar>
 `}
-></CodeBlock>
+	></CodeBlock>
+</div>

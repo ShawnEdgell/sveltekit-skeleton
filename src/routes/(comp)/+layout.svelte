@@ -40,7 +40,7 @@
 
 	<!-- Main Content Area -->
 	<div class="flex-grow flex justify-center">
-		<div class="max-w-3xl space-y-5">
+		<div class="max-w-3xl">
 			<slot />
 		</div>
 	</div>

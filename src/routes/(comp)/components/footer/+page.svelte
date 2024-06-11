@@ -2,9 +2,10 @@
 	import { CodeBlock } from '@skeletonlabs/skeleton';
 </script>
 
-<CodeBlock
-	language="html"
-	code={`<footer class="bg-surface-100-800-token h-64 py-4">
+<div class="my-6 p-6 space-y-5">
+	<CodeBlock
+		language="html"
+		code={`<footer class="bg-surface-100-800-token h-64 py-4">
 	<div class="container flex flex-col justify-center h-full mx-auto text-center">
 		<div class="mb-4">
 			<a href="/" class="mx-2 hover:underline" data-sveltekit-preload-data="hover">Home</a>
@@ -20,4 +21,5 @@
 	</div>
 </footer>
 `}
-></CodeBlock>
+	></CodeBlock>
+</div>
