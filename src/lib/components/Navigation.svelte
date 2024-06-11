@@ -8,7 +8,7 @@
 	}
 </script>
 
-<div class="h-full w-full flex flex-col justify-center items-center space-y-5 p-4">
+<div class="h-full w-full flex flex-col justify-center items-center space-y-5 p-6">
 	<a
 		href="/"
 		on:click={closeDrawer}
@@ -28,9 +28,9 @@
 		data-sveltekit-preload-data="hover">Services</a
 	>
 	<a
-		href="/contact"
+		href="/components"
 		on:click={closeDrawer}
 		class="btn btn-lg w-full variant-filled"
-		data-sveltekit-preload-data="hover">Contact</a
+		data-sveltekit-preload-data="hover">Components</a
 	>
 </div>

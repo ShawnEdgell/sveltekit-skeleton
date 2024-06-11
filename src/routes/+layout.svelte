@@ -39,7 +39,7 @@
 	<div class="sticky top-0 z-10 w-full">
 		<AppBar />
 	</div>
-	<div class="flex-grow flex items-center justify-center w-full p-6">
+	<div class="flex-grow flex items-center justify-center w-full h-full">
 		<slot />
 	</div>
 </div>

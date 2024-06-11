@@ -1,5 +1,5 @@
-<article class="prose dark:prose-dark lg:prose-xl my-6">
-	<h1 class="h1 font-bold">Header Example</h1>
+<article class="prose dark:prose-dark lg:prose-xl my-6 p-6">
+	<h1 class="h1 font-bold">Header</h1>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae gravida tellus. Duis tempus
 		commodo urna, sit amet suscipit risus. Morbi ac molestie nunc. Mauris eget velit vitae magna
